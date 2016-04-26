@@ -1,17 +1,34 @@
 body{
   background-color  : #FBEDCF;
   font-family       : 'Indie Flower', cursive;
+  color             : #6F4B03;
 }
 
-div#container_logo{
+div#logo-container{
   text-align  : center;
+  padding     : 10px;
 }
 
-div#container_logo img{
-  width       : 300px;
-  margin-top  : 50px;
+img#logo{
+  width     : 100%;
+  max-width : 480px;
 }
 
-div#container_logo h3{
-  color : #6F4B03;
+a#contact-trigger, a#contact-trigger:visited, a#contact-trigger:active{
+  color     : #6F4B03;
+  font-size : 20px;
+}
+
+@media screen and (min-width: 500px) {
+  div#logo-container{
+    padding-top : 50px;
+  }
+
+  div#logo-container h3{
+    margin-top  : 50px;
+  }
+
+  div#contact-form{
+    padding-bottom  : 50px;
+  }
 }
