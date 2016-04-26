@@ -1,0 +1,17 @@
+body{
+  background-color  : #FBEDCF;
+  font-family       : 'Indie Flower', cursive;
+}
+
+div#container_logo{
+  text-align  : center;
+}
+
+div#container_logo img{
+  width       : 300px;
+  margin-top  : 50px;
+}
+
+div#container_logo h3{
+  color : #6F4B03;
+}
