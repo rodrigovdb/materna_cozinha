@@ -14,7 +14,7 @@ img#logo{
   max-width : 480px;
 }
 
-a#contact-trigger, a#contact-trigger:visited, a#contact-trigger:active{
+#links a, #links a:visited, #links a:active{
   color     : #6F4B03;
   font-size : 20px;
 }
