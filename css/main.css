@@ -26,8 +26,12 @@ body{
 }
 
 @media screen and (max-width: 499px) {
-  p#sobre-grande{
+  #sobre-grande{
     display : none;
+  }
+
+  section#sobre{
+    height      : 530px;
   }
 
   img#logo{
@@ -41,11 +45,15 @@ body{
   }
 
   .site-section{
-    padding-top : 50px;
+    padding-top : 30px;
   }
 
   .idealizadoras-section{
     height      : 800px;
+  }
+
+  .intro-section, .idealizadoras-section{
+    background-color  : #FBEDCF;
   }
 }
 
@@ -54,9 +62,12 @@ body{
     display     : none;
   }
 
-  #logo-img{
-    text-align: center;
+  #sobre-grande h2{
+    text-align  : left;
   }
+
+  #logo-img
+
 
   img#logo{
     width : 100%;
