@@ -1,35 +1,71 @@
 body{
-  background-color  : #FBEDCF;
-  /*font-family       : 'Indie Flower', cursive;*/
   font-family       : 'Raleway', sans-serif;
   color             : #6F4B03;
 }
 
-div#logo-container{
-  text-align  : center;
-  padding     : 10px;
+#top-navbar{
+  background-color  : #6F4B03;
+  color             : #FBEDCF;
 }
 
-img#logo{
-  width     : 100%;
-  max-width : 480px;
+#top-navbar a, #top-navbar a:visited, #top-bar a:active{
+  color             : #FBEDCF;
 }
 
-#links a, #links a:visited, #links a:active{
-  color     : #6F4B03;
-  font-size : 20px;
+.intro-section, .selo-materna-cozinha-section, .contato-section{
+  background-color  : #FBEDCF;
 }
 
-@media screen and (min-width: 500px) {
-  div#logo-container{
+.contact-section {
+    height: 1588px;
+}
+
+#top-navbar .container li.active a{
+  background-color  : #FBEDCF;
+  color             : #6F4B03;
+}
+
+@media screen and (max-width: 499px) {
+  p#sobre-grande{
+    display : none;
+  }
+
+  img#logo{
+    margin-top  : -70px;
+    width       : 100%;
+  }
+
+  p{
+    line-height : 25px;
+    text-align  : justify;
+  }
+
+  .site-section{
     padding-top : 50px;
   }
 
-  div#logo-container h3{
-    margin-top  : 50px;
+  .idealizadoras-section{
+    height      : 800px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  section#sobre, li#link-sobre{
+    display     : none;
   }
 
-  div#contact-form{
-    padding-bottom  : 50px;
+  #logo-img{
+    text-align: center;
+  }
+
+  img#logo{
+    width : 100%;
+  }
+
+  .intro-section p, .idealizadoras-section p{
+    padding-top     : 50px;
+    text-align      : justify;
+    line-height     : 50px;
+    font-size       : 18px;
   }
 }

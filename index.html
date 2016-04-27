@@ -3,59 +3,158 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="MaTerna Cozinha">
     <meta name="description" content="Materna Cozinha">
     <meta name="keywords" content="Materna Cozinha">
     <meta name="language" content="pt_BR">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Rodrigo Otavio van den Berg Maia <rodrigovdb@gmail.com>">
 
     <title>Materna Cozinha</title>
 
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-    <!-- <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'> -->
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
-    <script type="text/javascript" src="js/main.js"></script>
-  </head>
 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-  <body>
-    <div class="row">
-      <div class="col-md-3"></div>
+</head>
 
-      <div class="col-md-6">
-        <div id="logo-container">
-          <img src="img/logo.png" id="logo" />
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-          <h3>Em breve novidades...</h3>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-          <div id="links">
-            <a id="contact-trigger" href="#" onclick="return false;">
-              <i class="fa fa-envelope"></i>
-              Contato
-            </a>
+    <!-- Navigation -->
+    <nav id="top-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Ocultar navegação</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Materna Cozinha</a>
+            </div>
 
-            <a href="https://www.facebook.com/MaTerna-Cozinha-533980053453393">
-              <i class="fa fa-facebook"></i>
-              Facebook
-            </a>
-          </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li id="link-sobre">
+                        <a class="page-scroll" href="#sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#selo-materna-cozinha">Selo Materna Cozinha</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#idealizadoras">Idealizadoras</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container -->
+    </nav>
 
-        <div id="contact-form" style="display: none">
-          <iframe src="https://docs.google.com/forms/d/1RkTsxtzpDdyk9EiRaD_9uBF80Z-zyBbIBUd2kiP4joA/viewform?embedded=true#start=embed" width="100%" height="1311" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" id="logo-img">
+                    <img src="img/logo.png" id="logo" />
+                </div>
+                <div class="col-md-8" id="logo-img">
+                    <p id="sobre-grande">
+                        Materna Cozinha é um movimento de mães que produzem e promovem produtos alimentícios deliciosos e de qualidade, feitos de maneira artesanal e responsável. Um movimento de mães que adoram cozinhar, comer e compartilhar, identificadas por um selo próprio, que busca reconhecer propósitos, fortalecer a rede e dar visibilidade às mães que empreendem no ramo ou que buscam satisfação pessoal e rendimento produzindo comida muito boa....
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="col-md-3"></div>
-    </div>
-  </body>
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre-section site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Sobre</h1>
+
+                    <p id="sobre-pequeno">
+                        Materna Cozinha é um movimento de mães que produzem e promovem produtos alimentícios deliciosos e de qualidade, feitos de maneira artesanal e responsável. Um movimento de mães que adoram cozinhar, comer e compartilhar, identificadas por um selo próprio, que busca reconhecer propósitos, fortalecer a rede e dar visibilidade às mães que empreendem no ramo ou que buscam satisfação pessoal e rendimento produzindo comida muito boa....
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- selo-materna-cozinha Section -->
+    <section id="selo-materna-cozinha" class="selo-materna-cozinha-section site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Selo Materna Cozinha</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- idealizadoras Section -->
+    <section id="idealizadoras" class="idealizadoras-section site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Idealizadoras</h1>
+
+                    <p>O Movimento Materna Cozinha surge de um grupo de quatro amigas de longa data - todas mães e ligadas à área da comunicação - que adoram cozinhar. Em fase de mudanças pessoais, apostando em novas perspectivas de vida, e unidas pela satisfação que sentem no ato de preparar alimentos e bem receber, um dia percebem a força do propósito comum: "se queremos mirar novos horizontes, por que não fazer algo de que gostamos e com quem gostamos? É aí, no item "com quem gostamos", que se agrega ao grupo a única integrante que (ainda) não é mãe, mas também comunicadora, e que trabalha para dar "a cara" desse movimento lindo. O Materna Cozinha nasce dentro da lógica das quatro economias exponenciais: Criativa, Colaborativa, Compartilhada e Multivalor, acreditando nos empreendimentos que buscam formas mais justas, distribuídas e divertidas de se trabalhar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contato</h1>
+
+                    <p>Se você quer acompanhar as novidades do movimento ou tem interesse em fazer parte, clique em Contato logo aqui embaixo ou envie um e-mail para maternacozinha@gmail.com ou utilize o formulário abaixo </p>
+                    <iframe src="https://docs.google.com/forms/d/1RkTsxtzpDdyk9EiRaD_9uBF80Z-zyBbIBUd2kiP4joA/viewform?embedded=true#start=embed" width="100%" height="1315" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
 </html>
